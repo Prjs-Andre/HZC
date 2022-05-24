@@ -1,0 +1,45 @@
+:root {
+    --preto: #15191C;
+    --preto-claro: #1D232A;
+    --cinza-escuro: #2C343A;
+    --cinza-claro: #95999C;
+    --branco: #FFFFFF;
+    --azul: #0480DC;
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body {
+    background-color: var(--preto-claro);
+    
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: var(--branco);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr ;
+    }
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+    .secao-videos {
+        grid-area: secao-videos;
+    }
+    .destaque-produto {
+        grid-area: destaque-produto;
+    }
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+    .secao-produtos {
+        grid-area: secao-produtos;
+    }
+}
